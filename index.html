@@ -1018,7 +1018,7 @@
        │  4) Replace the three constants below                           │
        └─────────────────────────────────────────────────────────────────┘
     ═══════════════════════════════════════════════════════════════════ */
-    const EMAILJS_PUBLIC_KEY = 'OLEwXSa658qydlGOqmn6T';
+    const EMAILJS_PUBLIC_KEY = '5-xmj5MCdLMVErC__';
     const EMAILJS_SERVICE_ID = 'service_h1uawxa';
     const EMAILJS_TEMPLATE_ID = 'template_lcuo185';
 
@@ -1108,26 +1108,28 @@
       const pronouns = document.querySelector('input[name="pronouns"]:checked')?.value || '';
 
       return {
-        to_email: 'karldjzyoffiicial@gmail.com',
-        player_name: get('name'),
-        pronouns: pronouns,
-        discord: get('discord'),
-        introduction: get('introduction'),
-        ttrpg_experience: get('ttrpg-exp'),
-        lines_veils: get('lines-veils'),
-        char_name: get('char-name'),
-        char_class: get('char-class'),
-        char_race: get('char-race'),
-        char_background: get('char-bg'),
-        char_description: get('char-desc'),
-        backstory: get('backstory'),
-        meaningful_campaign: get('meaningful'),
-        sacrifice_choice: get('sacrifice'),
-        profit_or_loss: get('profit-loss'),
-        deadliest_weapon: get('weapon'),
-        intensity_reason: get('intensity'),
-        submitted_at: new Date().toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }),
-      };
+  applicant_name: get('name'),
+  pronouns: pronouns,
+  discord: get('discord'),
+  introduction: get('introduction'),
+  ttrpg_experience: get('ttrpg-exp'),
+  lines_veils: get('lines-veils'),
+
+  character_name: get('char-name'),
+  class: get('char-class'),
+  race: get('char-race'),
+  background: get('char-bg'),
+  character_notes: get('char-desc'),
+
+  backstory: get('backstory'),
+  meaningful_campaign: get('meaningful'),
+  moral_choice: get('sacrifice'),
+  problem_loss: get('profit-loss'),
+  deadliest_weapon: get('weapon'),
+  intensity_reason: get('intensity'),
+
+  time: new Date().toLocaleString()
+}
     }
 
     form.addEventListener('submit', async (e) => {
